@@ -1,0 +1,366 @@
+.contentFriend {
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    background: rgb(0, 140, 144);
+    background: linear-gradient(25deg, rgba(0, 140, 144, 1) 20%, rgba(0, 80, 155, 1) 55%, rgba(0, 140, 144, 1) 86%, rgba(0, 50, 255, 1) 100%);
+}
+.leftsideFriend {
+    height: 100%;
+    width: 100px;
+    background-color: rgb(2, 9, 31);
+    position: relative;
+    section {
+        margin: 5px 0;
+        position: relative;
+        h3 {
+            position: absolute;
+            top: 10px;
+            color: rgb(2, 191, 248);
+            left: 70px;
+        }
+        overflow: hidden;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(2, 9, 31);
+            width: 120px;
+            height: 20px;
+            rotate: -5deg;
+            left: -5px;
+            top: -10px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: rgb(2, 9, 31);
+            width: 120px;
+            height: 20px;
+            rotate: -5deg;
+            left: -5px;
+            bottom: -5px;
+        }
+    }
+    svg {
+        padding: 25px;
+        width: 50px;
+        height: 50px;
+        fill: whitesmoke;
+        cursor: pointer;
+        &:hover {
+            background-color: whitesmoke;
+            fill: rgb(2, 9, 31);
+        }
+    }
+    div {
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(2, 9, 31);
+            width: 120px;
+            height: 20px;
+            rotate: -5deg;
+            left: -5px;
+            top: -10px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: rgb(2, 9, 31);
+            width: 120px;
+            height: 20px;
+            rotate: -5deg;
+            left: -5px;
+            bottom: -5px;
+        }
+    }
+}
+.rightsideFriend {
+    width: 350px;
+    height: 100%;
+    position: relative;
+    div {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+}
+.navfriend {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    div {
+        height: auto;
+        div {
+            background-color: rgba(0, 5, 19, 0.74);
+            margin: 5px 0;
+            width: 100%;
+            height: 100px;
+            cursor: pointer;
+            position: relative;
+            img {
+                user-select: none;
+                pointer-events: none;
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                top: 50%;
+                transform: translate(20%, -50%);
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            h2 {
+                color: whitesmoke;
+                left: 120px;
+                font-weight: 100;
+                letter-spacing: 1px;
+                top: 10px;
+                position: absolute;
+                user-select: none;
+                pointer-events: none;
+            }
+            h3 {
+                position: absolute;
+                color: rgb(2, 191, 248);
+                left: 110px;
+                top: 60px;
+                font-weight: 100;
+                user-select: none;
+                pointer-events: none;
+            }
+            transition: 0.2s;
+            &:hover {
+                transform: translateX(10px);
+                background-color: rgba(255, 255, 255, 0.74);
+                h2 {
+                    color: rgb(2, 9, 31);
+                    font-weight: 800;
+                }
+                h3 {
+                    color: rgb(2, 51, 155);
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+    h1 {
+        pointer-events: none;
+        user-select: none;
+        width: 100%;
+        margin: auto;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 20px;
+        text-align: center;
+        padding: 5px 0;
+        background-color: rgb(0, 5, 19);
+    }
+}
+
+.navadd {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    input {
+        background-color: rgb(2, 9, 31);
+        text-align: center;
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin: 10px;
+        width: 330px;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0px 3px rgb(0, 5, 19);
+        height: 50px;
+        &::placeholder {
+            color: rgba(245, 245, 245, 0.66);
+        }
+        &:focus {
+            outline: none;
+            box-shadow: inset 0 0 0px 3px rgb(217, 218, 220);
+        }
+        &:hover {
+            box-shadow: inset 0 0 0px 3px rgb(217, 218, 220);
+        }
+    }
+    div {
+        height: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: relative;
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+        div {
+            background-color: rgba(0, 5, 19, 0.74);
+            margin: 5px 0;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            position: relative;
+            h2 {
+                color: whitesmoke;
+                user-select: none;
+                margin: auto 20px;
+                font-weight: 100;
+                letter-spacing: 1px;
+            }
+            button {
+                background-color: rgb(2, 9, 31);
+                position: absolute;
+                padding: 10px 30px;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                font-weight: 800;
+                color: rgb(217, 218, 220);
+                letter-spacing: 2px;
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.74);
+                    color: rgb(2, 9, 31);
+                    font-weight: 800;
+                }
+            }
+            transition: 0.2s;
+        }
+    }
+}
+
+.managefriend {
+    background-color: rgb(2, 9, 21);
+    text-align: center;
+    img {
+        width: 80px;
+        border-radius: 50%;
+        height: 80px;
+        margin: 20px 0;
+    }
+    h1 {
+        color: whitesmoke;
+        margin-bottom: 20px;
+        user-select: none;
+        letter-spacing: 1px;
+        font-weight: 100;
+    }
+    button {
+        margin: 10px 0;
+        width: 300px;
+        font-weight: 800;
+        height: 50px;
+        text-shadow: 0 0 5px black;
+        font-size: 20px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        &:hover {
+            color: rgb(2, 9, 31);
+            background-color: rgb(42, 154, 158) !important;
+            text-shadow: none;
+        }
+    }
+}
+.deleteFriend {
+    background-color: rgb(65, 1, 1);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.contentMessage {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    div {
+        text-align: center;
+        background-color: rgba(2, 9, 31, 0.84);
+        margin: 5px 0;
+        width: 100%;
+        height: 130px;
+        h1 {
+            font-size: 25px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            user-select: none;
+        }
+        h4 {
+            font-size: 18px;
+            font-weight: 100;
+            user-select: none;
+        }
+        section {
+            margin: 10px auto;
+            display: flex;
+            button {
+                background-color: rgb(2, 9, 31);
+                padding: 10px 30px;
+                margin: auto;
+                cursor: pointer;
+                font-weight: 800;
+                &:hover {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+.contentSetting {
+    text-align: center;
+    div {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        padding-top: 20px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 15px 2px black;
+        }
+        svg {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 5px;
+            right: -20px;
+        }
+    }
+    h3,h4 {
+        font-weight: 100;
+        margin: 20px 0;
+        text-shadow: 0 0 5px black;
+    }
+    button {
+        margin: 20px 0;
+        padding: 20px 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 15px;
+        border-radius: 50px;
+        background-color: rgba(95, 43, 43, 0.831);
+        cursor: pointer;
+        transition: .2s;
+        &:hover {
+            padding: 20px 50px;
+
+        }
+    }
+    input {
+        width: 90%;
+    }
+}

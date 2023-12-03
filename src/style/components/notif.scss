@@ -1,0 +1,54 @@
+.contentNotif {
+    width: 400px;
+    height: 100px;
+    background: linear-gradient(25deg, rgba(0, 140, 144, 1) 20%, rgba(0, 80, 155, 1) 55%, rgba(0, 140, 144, 1) 86%, rgba(0, 50, 255, 1) 100%);
+    position: absolute;
+    top: 150px;
+    transition: .2s;
+    left: -500px;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 2px 5px 0px 5px rgb(2, 9, 31);
+    h3 {
+        user-select: none;
+        pointer-events: none;
+        text-shadow: 0 0 5px black;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 1px;
+        width: 300px;
+        font-weight: 100;
+        margin: auto;
+    }
+    svg {
+        width: 80px;
+        margin: auto 10px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            fill: rgb(46, 151, 4);
+            animation: bloop 0.5s;
+        }
+    }
+    img {
+        user-select: none;
+        pointer-events: none;
+        margin: auto 10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px black;
+    }
+}
+@keyframes bloop {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.5;
+    }
+    100% {
+        scale: 1;
+        rotate: 360deg;
+    }
+}
